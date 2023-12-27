@@ -5,15 +5,15 @@
 
 <!-- tabs:start -->
 
-## **External Data Management**
+## tab **External Data Management**
 
      Vendor Onboarding - Clinical Reasearch Organizations and Contract Manufacturing Development Organizations
 
-## **Validation Services**
+## tab **Validation Services**
 
      Regulatory Compliance
 
-## **Document Services**
+## tab **Document Services**
 
     eCTD Automation - Reproducible Regulatory Submission 
 
