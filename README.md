@@ -1,1 +1,1 @@
-Automation | Formal Methods | Regulatory Compliance | Total Quality | [About](SmartGxP2023.pdf)
+Automation | Formal Methods | Regulatory Compliance | Total Quality | [About](About.md)
