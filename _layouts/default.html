@@ -70,12 +70,12 @@ body {font-family: Arial;}
       {{ content }}
 
       <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'exdm')">External Data Management</button>
-  <button class="tablinks" onclick="openCity(event, 'validation')">Validation Services</button>
-  <button class="tablinks" onclick="openCity(event, 'regulatory')">eCTD Guidance</button>
-  <button class="tablinks" onclick="openCity(event, 'clinical')">Clinical Studies</button>
-  <button class="tablinks" onclick="openCity(event, 'modernization')">Modernization</button>
-  <button class="tablinks" onclick="openCity(event, 'diagnostics')">&nbsp;&nbsp;&nbsp;Diagnostics</button>
+  <button class="tablinks" onclick="openTab(event, 'exdm')">External Data Management</button>
+  <button class="tablinks" onclick="openTab(event, 'validation')">Validation Services</button>
+  <button class="tablinks" onclick="openTab(event, 'regulatory')">eCTD Guidance</button>
+  <button class="tablinks" onclick="openTab(event, 'clinical')">Clinical Studies</button>
+  <button class="tablinks" onclick="openTab(event, 'modernization')">Modernization</button>
+  <button class="tablinks" onclick="openTab(event, 'diagnostics')">&nbsp;&nbsp;&nbsp;Diagnostics</button>
 </div>
 
 <div id="exdm" class="tabcontent">
@@ -114,7 +114,7 @@ $(document).ready(function() {
    $("#exdm").trigger('click');
 });  
   
-function openCity(evt, cityName) {
+function openTab(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
