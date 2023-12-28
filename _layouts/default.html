@@ -55,6 +55,15 @@ body {font-family: Arial;}
   from {opacity: 0;}
   to {opacity: 1;}
 }
+
+.copyright {
+    float: left;
+}
+
+.social { 
+    float: right;
+}
+      
 </style>
 
 {% seo %}
@@ -138,7 +147,7 @@ function openTab(evt, serviceName) {
       
       {% if site.github.private != true and site.github.license %}
       <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
-        To the Glory of <a href="./SmartGxP2023.pdf", target="_blank">Science</a>! 
+        <span class="social">To the Glory of <a href="./SmartGxP2023.pdf", target="_blank">Science</a>!</span> 
       </div>
       {% endif %}
     </div>
