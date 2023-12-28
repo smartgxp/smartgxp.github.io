@@ -110,7 +110,15 @@ body {font-family: Arial;}
 
 <script>
 
-$("#exdm").trigger('click');
+$(document).ready(function(){
+ $('#exdm').click(function(){
+        alert('button clicked');
+    });
+  // set time out 2 sec
+     setTimeout(function(){
+        $('#click').trigger('click');
+    }, 2000);
+});
   
 function openTab(evt, cityName) {
   var i, tabcontent, tablinks;
