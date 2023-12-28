@@ -109,6 +109,11 @@ body {font-family: Arial;}
 </div>
 
 <script>
+
+$(document).ready(function() {
+   $("#exdm").trigger('click');
+});  
+  
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
