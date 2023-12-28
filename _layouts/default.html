@@ -119,16 +119,6 @@ body {font-family: Arial;}
 
 <script>
 
-$(document).ready(function(){
- $('#exdm').click(function(){
-        alert('button clicked');
-    });
-  // set time out 2 sec
-     setTimeout(function(){
-        $('#click').trigger('click');
-    }, 2000);
-});
-  
 function openTab(evt, serviceName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -147,7 +137,7 @@ function openTab(evt, serviceName) {
       
       {% if site.github.private != true and site.github.license %}
       <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
-        <span class="social">To the Glory of <a href="./SmartGxP2023.pdf", target="_blank">Science</a>!</span> 
+        <span class="copyright">Automation |</span><span class="social">To the Glory of <a href="./SmartGxP2023.pdf", target="_blank">Science</a>!</span> 
       </div>
       {% endif %}
     </div>
