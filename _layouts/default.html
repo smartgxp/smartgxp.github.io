@@ -70,7 +70,7 @@ body {font-family: Arial;}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
   </head>
-  <body onload="openTab(event, 'exdm')">
+  <body onload="openCity(event, 'exdm')">
     <div class="container-lg px-3 my-5 markdown-body">
       {% if site.title and site.title != page.title %}
       <h1><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h1>
@@ -81,12 +81,12 @@ body {font-family: Arial;}
 This brochure describes enterprise services available by contacting Sales or Technical support at the specified contact under each tab.
 <p></p><p></p>
 <div class="tab">
-  <button class="tablinks" onclick="openTab(event, 'exdm')">External Data Management</button>
-  <button class="tablinks" onclick="openTab(event, 'validation')">Validation Services</button>
-  <button class="tablinks" onclick="openTab(event, 'regulatory')">eCTD Guidance</button>
-  <button class="tablinks" onclick="openTab(event, 'clinical')">Clinical Studies</button>
-  <button class="tablinks" onclick="openTab(event, 'modernization')">Modernization</button>
-  <button class="tablinks" onclick="openTab(event, 'diagnostics')">&nbsp;&nbsp;&nbsp;&nbsp;Diagnostics</button>
+  <button class="tablinks" onclick="openCity(event, 'exdm')">External Data Management</button>
+  <button class="tablinks" onclick="openCity(event, 'validation')">Validation Services</button>
+  <button class="tablinks" onclick="openCity(event, 'regulatory')">eCTD Guidance</button>
+  <button class="tablinks" onclick="openCity(event, 'clinical')">Clinical Studies</button>
+  <button class="tablinks" onclick="openCity(event, 'modernization')">Modernization</button>
+  <button class="tablinks" onclick="openCity(event, 'diagnostics')">&nbsp;&nbsp;&nbsp;&nbsp;Diagnostics</button>
 </div>
 
 <div id="exdm" class="tabcontent">
@@ -152,6 +152,21 @@ function openTab(evt, serviceName) {
   document.getElementById(serviceName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+  
 </script>
 
       
