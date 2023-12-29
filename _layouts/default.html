@@ -4,57 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>SmartGxP™</title>
     <style>
 body {font-family: Arial;}
-
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  -webkit-animation: fadeEffect 1s;
-  animation: fadeEffect 1s;
-}
-
-/* Fade in tabs */
-@-webkit-keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
 
 .copyright {
     float: left;
@@ -63,7 +16,6 @@ body {font-family: Arial;}
 .social { 
     float: right;
 }
-      
 </style>
 
 {% seo %}
@@ -80,80 +32,71 @@ body {font-family: Arial;}
 
 This brochure describes enterprise services available by contacting Sales or Technical support at the specified contact under each tab.
 <p></p><p></p>
-<div class="tab">
-  <button class="tablinks" onclick="openTab(event, 'exdm')">External Data Management</button>
-  <button class="tablinks" onclick="openTab(event, 'validation')">Validation Services</button>
-  <button class="tablinks" onclick="openTab(event, 'regulatory')">eCTD Guidance</button>
-  <button class="tablinks" onclick="openTab(event, 'clinical')">Clinical Studies</button>
-  <button class="tablinks" onclick="openTab(event, 'modernization')">Modernization</button>
-  <button class="tablinks" onclick="openTab(event, 'diagnostics')">&nbsp;&nbsp;&nbsp;&nbsp;Diagnostics</button>
-</div>
 
-<div id="exdm" class="tabcontent">
-  <h3>External Data Management</h3>
-  <p>External Data Management</p>
-  <p></p><p></p><p></p><p></p>
-  <u><b>Sales</b></u>: sales@smartgxp.digital<br>
-  <u><b>Technical</b></u>: boxadmin@smartgxp.digital  
-</div>
+<div class="w3-container">
+  
+  <div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button tablink w3-red" onclick="openTab1(event,'exdm')">External Data Management</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openTab1(event,'validation')">Validation Services</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openTab1(event,'regulatory')">eCTD Guidance</button>
+	
+	<button class="w3-bar-item w3-button tablink w3-red" onclick="openTab1(event,'clinical')">Clinical Studies</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openTab1(event,'modernization')">Modernization</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openTab1(event,'diagnostics')">Diagnostics</button>	
+  </div>
+  
+  <div id="exdm" class="w3-container w3-border city">
+     <h3>External Data Management</h3>
+     <p>External Data Management</p>
+     <p></p><p></p><p></p><p></p>
+     <u><b>Sales</b></u>: sales@smartgxp.digital<br>
+     <u><b>Technical</b></u>: boxadmin@smartgxp.digital	
+  </div>
 
-<div id="validation" class="tabcontent">
-  <h3>Data Validation Services</h3>
-  <p>Data Validation Services</p> 
-  <p></p><p></p><p></p><p></p>
-  <u><b>Sales</b></u>: sales@smartgxp.digital<br>
-  <u><b>Technical</b></u>: admin@smartgxp.digital
-</div>
+  <div id="validation" class="w3-container w3-border city" style="display:none">
+    <h3>Data Validation Services</h3>
+    <p>Data Validation Services</p> 
+    <p></p><p></p><p></p><p></p>
+    <u><b>Sales</b></u>: sales@smartgxp.digital<br>
+    <u><b>Technical</b></u>: admin@smartgxp.digital
+  </div>
 
-<div id="regulatory" class="tabcontent">
-  <h3>Compliance</h3>
-  <p>Regulatory Compliance</p>
-  <p></p><p></p><p></p><p></p>
-  <u><b>Sales</b></u>: sales@smartgxp.digital<br>
-  <u><b>Technical</b></u>: admin@smartgxp.digital
-</div>
+  <div id="regulatory" class="w3-container w3-border city" style="display:none">
+     <h3>Compliance</h3>
+     <p>Regulatory Compliance</p>
+     <p></p><p></p><p></p><p></p>
+     <u><b>Sales</b></u>: sales@smartgxp.digital<br>
+     <u><b>Technical</b></u>: admin@smartgxp.digital	
+  </div>
+  
+  
+  <div id="clinical" class="w3-container w3-border city" style="display:none">
+    <h3>Clinical Data Sciences</h3>
+    <p>ADSL Preparation</p>
+    <p></p><p></p><p></p><p></p>
+    <u><b>Sales</b></u>: sales@smartgxp.digital<br>
+    <u><b>Technical</b></u>: admin@smartgxp.digital
+  </div>
 
-<div id="clinical" class="tabcontent">
-  <h3>Clinical Data Sciences</h3>
-  <p>ADSL Preparation</p>
-  <p></p><p></p><p></p><p></p>
-  <u><b>Sales</b></u>: sales@smartgxp.digital<br>
-  <u><b>Technical</b></u>: admin@smartgxp.digital
-</div>
-
-<div id="modernization" class="tabcontent">
-  <h3>Cloud Services</h3>
-  <p>Virtual Private Cloud + Enterprise Cloud Containerization</p>
-  <p></p><p></p><p></p><p></p>
-  <u><b>Sales</b></u>: sales@smartgxp.digital<br>
-  <u><b>Technical</b></u>: admin@smartgxp.digital
-</div>
-
-<div id="diagnostics" class="tabcontent">
-  <h3>Software Diagnostic Services</h3>
-  <p>Enterprise Software Deployments</p>
-  <p></p><p></p><p></p><p></p>
-  <u><b>Sales</b></u>: sales@smartgxp.digital<br>
-  <u><b>Technical</b></u>: admin@smartgxp.digital
+  <div id="modernization" class="w3-container w3-border city" style="display:none">
+     <h3>Cloud Services</h3>
+     <p>Virtual Private Cloud + Enterprise Cloud Containerization</p>
+     <p></p><p></p><p></p><p></p>
+     <u><b>Sales</b></u>: sales@smartgxp.digital<br>
+     <u><b>Technical</b></u>: admin@smartgxp.digital
+  </div>
+  
+  <div id="diagnostics" class="w3-container w3-border city" style="display:none">
+     <h3>Software Diagnostic Services</h3>
+     <p>Enterprise Software Deployments</p>
+     <p></p><p></p><p></p><p></p>
+     <u><b>Sales</b></u>: sales@smartgxp.digital<br>
+     <u><b>Technical</b></u>: admin@smartgxp.digital     
+  </div>  
 </div>
 
 <script>
-
-function openTab(evt, serviceName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(serviceName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-function openCity(evt, cityName) {
+function openTab1(evt, cityName) {
   var i, x, tablinks;
   x = document.getElementsByClassName("city");
   for (i = 0; i < x.length; i++) {
@@ -166,7 +109,6 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " w3-red";
 }
-  
 </script>
 
       
